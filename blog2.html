@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi blog</title>
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/font/flaticon.css">
+    <link rel="stylesheet" href="CSS/media-queries.css">
+</head>
+
+<body>
+    <header>
+        <section class="header-icon-container">
+            <img src="./CSS/Imágenes/logo.png" alt="">
+            <div class="item">
+                <a href="https://www.facebook.com/"><span class="flaticon-001-facebook"></span></a>
+                <a href="https://twitter.com/?lang=es"><span class="flaticon-002-twitter"></span></a>
+                <a href="https://www.instagram.com/?hl=es-la"><span class="flaticon-011-instagram"></span></a>
+                <a href="https://co.linkedin.com/"><span class="flaticon-010-linkedin"></span></a>
+                <a href="https://www.youtube.com/?hl=es-MX&client=fi"><span class="flaticon-008-youtube"></span></a>
+
+            </div>
+        </section>
+        <nav>
+            <section class="profile-link">
+                <a href="index.html">Inicio</a>
+                <a href="blog1.html">Productos</a>
+                <a href="blog2.html">Consejos y Datos</a>
+                <a href="contact.html">Contacto</a>
+            </section>
+
+        </nav>
+    </header>
+    <main class="blog2-main-container">
+        <div class="grid-container ">
+
+            <h1>Consejos y Datos</h1>
+            <section class="blog2-img">
+                <article class="blog2-img1">
+                    <img src="./CSS/Imágenes/bebe1.jpg" alt="">
+                </article>
+                <article class="blog2-img2">
+                    <img src="./CSS/Imágenes/bebe4.jpg" alt="">
+                    <img src="./CSS/Imágenes/bebe5.jpg" alt="">
+                    <img src="./CSS/Imágenes/bebe7.jpg" alt="">
+                </article>
+            </section>
+
+            <section class="blog2-baby-container">
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quibusdam minima optio cum! Deserunt
+                    tempore quaerat beatae. Obcaecati nisi officiis deleniti quos quae! Suscipit eligendi minus
+                    quisquam! Eius, ratione impedit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
+                    consequuntur veritatis quia recusandae! Explicabo quidem ullam optio officiis nostrum corporis,
+                    praesentium, vitae maxime autem quo vero totam, repudiandae asperiores numquam!</p>
+
+                    <button class="btn" onclick="mostrar()">Mensajes</button>
+            </section>
+
+            <section class="cards" id="card-function">
+                <div class="card">
+                    <div class="content-card">
+                        <h4>Mensaje 1</h4>
+                        <!-- <svg class="blog2-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250"><path fill="#00cba9" fill-opacity="0.3" d="M0,160L11.4,138.7C22.9,117,46,75,69,74.7C91.4,75,114,117,137,117.3C160,117,183,75,206,96C228.6,117,251,203,274,234.7C297.1,267,320,245,343,234.7C365.7,224,389,224,411,208C434.3,192,457,160,480,170.7C502.9,181,526,235,549,266.7C571.4,299,594,309,617,272C640,235,663,149,686,112C708.6,75,731,85,754,117.3C777.1,149,800,203,823,240C845.7,277,869,299,891,298.7C914.3,299,937,277,960,261.3C982.9,245,1006,235,1029,197.3C1051.4,160,1074,96,1097,74.7C1120,53,1143,75,1166,85.3C1188.6,96,1211,96,1234,122.7C1257.1,149,1280,203,1303,218.7C1325.7,235,1349,213,1371,181.3C1394.3,149,1417,107,1429,85.3L1440,64L1440,320L1428.6,320C1417.1,320,1394,320,1371,320C1348.6,320,1326,320,1303,320C1280,320,1257,320,1234,320C1211.4,320,1189,320,1166,320C1142.9,320,1120,320,1097,320C1074.3,320,1051,320,1029,320C1005.7,320,983,320,960,320C937.1,320,914,320,891,320C868.6,320,846,320,823,320C800,320,777,320,754,320C731.4,320,709,320,686,320C662.9,320,640,320,617,320C594.3,320,571,320,549,320C525.7,320,503,320,480,320C457.1,320,434,320,411,320C388.6,320,366,320,343,320C320,320,297,320,274,320C251.4,320,229,320,206,320C182.9,320,160,320,137,320C114.3,320,91,320,69,320C45.7,320,23,320,11,320L0,320Z"></path></svg> -->
+                        <img src="./CSS/Imágenes/bebe11.jpg" alt="">
+
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content-card">
+                        <h4>Mensaje 2</h4>
+                        <!-- <svg class="blog2-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250"><path fill="#00cba9" fill-opacity="0.3" d="M0,160L11.4,138.7C22.9,117,46,75,69,74.7C91.4,75,114,117,137,117.3C160,117,183,75,206,96C228.6,117,251,203,274,234.7C297.1,267,320,245,343,234.7C365.7,224,389,224,411,208C434.3,192,457,160,480,170.7C502.9,181,526,235,549,266.7C571.4,299,594,309,617,272C640,235,663,149,686,112C708.6,75,731,85,754,117.3C777.1,149,800,203,823,240C845.7,277,869,299,891,298.7C914.3,299,937,277,960,261.3C982.9,245,1006,235,1029,197.3C1051.4,160,1074,96,1097,74.7C1120,53,1143,75,1166,85.3C1188.6,96,1211,96,1234,122.7C1257.1,149,1280,203,1303,218.7C1325.7,235,1349,213,1371,181.3C1394.3,149,1417,107,1429,85.3L1440,64L1440,320L1428.6,320C1417.1,320,1394,320,1371,320C1348.6,320,1326,320,1303,320C1280,320,1257,320,1234,320C1211.4,320,1189,320,1166,320C1142.9,320,1120,320,1097,320C1074.3,320,1051,320,1029,320C1005.7,320,983,320,960,320C937.1,320,914,320,891,320C868.6,320,846,320,823,320C800,320,777,320,754,320C731.4,320,709,320,686,320C662.9,320,640,320,617,320C594.3,320,571,320,549,320C525.7,320,503,320,480,320C457.1,320,434,320,411,320C388.6,320,366,320,343,320C320,320,297,320,274,320C251.4,320,229,320,206,320C182.9,320,160,320,137,320C114.3,320,91,320,69,320C45.7,320,23,320,11,320L0,320Z"></path></svg> -->
+                        <img src="./CSS/Imágenes/bebe8.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="contact-main-container">
+                <div>
+                    <img src="./CSS/Iconos Blog/svg/013-newsletter.svg" alt="">
+                    <div class="contact-left">
+                        <a href="contact.html">Contactanos</a>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+    </main>
+    <footer>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    </footer>
+</body>
+<script src="./script.js"></script>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/font/flaticon.css">
+    <link rel="stylesheet" href="CSS/media-queries.css">
+
+    <title>Mi blog</title>
+</head>
+
+<body>
+    <header>
+        <section class="header-icon-container">
+            <img src="./CSS/Imágenes/logo.png" alt="">
+            <div class="item">
+                <a href="https://www.facebook.com/"><span class="flaticon-001-facebook"></span></a>
+                <a href="https://twitter.com/?lang=es"><span class="flaticon-002-twitter"></span></a>
+                <a href="https://www.instagram.com/?hl=es-la"><span class="flaticon-011-instagram"></span></a>
+                <a href="https://co.linkedin.com/"><span class="flaticon-010-linkedin"></span></a>
+                <a href="https://www.youtube.com/?hl=es-MX&client=fi"><span class="flaticon-008-youtube"></span></a>
+
+            </div>
+        </section>
+        <nav>
+            <section class="profile-link">
+                <a href="index.html">Inicio</a>
+                <a href="blog1.html">Productos</a>
+                <a href="blog2.html">Consejos y Datos</a>
+                <a href="contact.html">Contacto</a>
+            </section>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-form">
+            <div class="container-main-form">
+                <form class="formulario">
+
+                    <label>Nombre:</label>
+                    <input type="text" id="name" name="user_name">
+                    <br>
+                    <label>Telefono:</label>
+                    <input type="text" id="tel" name="tel">
+
+                    <br>
+                    <label>Correo electrónico:</label>
+                    <input type="email" id="mail" name="user_mail">
+                    <br>
+
+                    <label>Mensaje:</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                    <br>
+
+                    
+                </form>
+                
+                <article class="form-img">
+                    <img src="./CSS/Imágenes/bebe6.jpg" alt="">
+                </article>
+                
+            </div>
+            <button onclick="enviar()">Envíar</button>
+        </div>
+
+        <section class="card-contact" id="enviar-function" >
+            <div class="">
+                <div class="">
+                    <h4>Gracias por enviar sus datos</h4>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+    </footer>
+</body>
+<script src="./script.js"></script>
+
+
+</html>

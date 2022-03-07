@@ -1,0 +1,507 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+@font-face {
+    font-family: 'roboto';
+    src: url('Fuentes/Roboto_Mono/RobotoMono-Medium.ttf');
+    font-style: normal;
+    font-weight: 300;
+}
+body {
+    font-family: 'roboto', monospace;
+    margin: 0;
+    padding: 0;
+}
+/* a {
+    text-decoration: none;
+    display: inline;
+    color: black;
+
+} */
+.home-body {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.grid-container {
+    max-width: 980px;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+/* encabezado --------------------------*/
+header {
+    width: 100%;
+    /* height: 150px; */
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    /* position: fixed;
+    z-index: 1; */
+}
+header .header-icon-container {
+    width: 100%;
+    /* height: 50px; */
+    display: grid;
+    background-color: #e6916a;
+}
+
+header .header-icon-container img{
+    position: absolute;
+    top: 9px;
+    left: 6%;
+    height: 15%;
+    
+}
+header .header-icon-container .item {
+    height: auto;
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: end;
+    margin-right: 50px;
+}
+header .header-icon-container a {
+    text-decoration: none;
+    display: inline;
+    color: black;
+}
+nav {
+    display: grid;
+    height: 4em;
+    background-color: #d3959b38;
+}
+nav .nav-logo-container {
+    margin-left: 50px;
+}
+nav .nav-logo-container img {
+    width: 220px;
+    margin-top: 10px;
+}
+nav .profile-link {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 50px;
+    
+}
+nav .profile-link a {
+    font-size: 0.95em;
+    color: black;
+    border-bottom: 1px solid black;
+    text-decoration: none;
+    margin-right: 1em;
+}
+
+nav .profile-link a:hover {
+    font-size: 1.15em;
+    border-radius: 5px;
+    padding: 0.15em;
+    box-shadow: #d3959b 0px 2px 5px -1px, #23282d 0px 1px 3px -1px;
+
+}
+
+/* cuerpo de la primra pantalla ------------------------*/
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    height: 100%;
+    background: #D3959B ; 
+    background: -webkit-linear-gradient(to right, #BFE6BA, #D3959B), url("Imágenes/portada.jpg");  
+    background: linear-gradient(to right, #bfe6ba61, #d3959b7d), url("Imágenes/portada.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center;
+    justify-items: center;
+    background-attachment: fixed; */
+    /* margin-top: 3em; */
+}
+.main-container section {
+    display: grid;
+    grid-column: 2;
+    justify-items: center;
+    margin-top: 10em;
+}
+.main-container-text {
+    /* font-family: 'roboto', monospace; */
+    font-family: 'Fredoka One', cursive;
+    font-weight: 700;
+    font-size: 50px;
+    color: white;
+    border: 1px black;
+    letter-spacing: 10px;
+    text-align: center;
+    text-shadow: 2px 2px 2px #d3959b, 
+    4px 4px 4px #47cfac, 
+    6px 7px 3px #ccd1d9;
+}
+.main-container-button {
+    width: 110px;
+    height: 50px;
+    background-color: #48cfad;
+    display: grid;
+    align-items: center;
+}
+.main-container-button a {
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+
+/* cuerpo del blogs ----------------------------*/
+
+/* .baby-container{
+    height:100vh;
+} */
+
+.blogs-main {
+    display: grid;
+}
+.blogs-baby-container {
+    background-color: #bad3e6;
+    padding: 2em 50px;
+    
+}
+.blogs-main-baby {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
+    height: 35vh;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+.blogs-baby-img-container {
+    grid-column: 1;
+    justify-content: center;
+    display: flex;
+    align-content: space-around;
+    align-items: center;
+    height: inherit;
+}
+
+.blogs-baby-img-container img {
+    /* width: 80%; */
+    height: inherit;
+}
+
+.blogs-baby-info-container {
+    grid-column: 2;
+    text-align: center;
+    /* height: inherit; */
+}
+.blogs-baby-info-container p {
+    margin-bottom: 15px;
+    font-size: 0.8em;
+}
+.blogs-post-container {
+    padding: 0 50px 40px;
+}
+.blogs-post-container h3 {
+    border-bottom: 1px solid #23282d;
+    padding-bottom: 20px;
+    text-align: center;
+
+}
+.blogs-button {
+    border: 1px solid #47cfac;
+    padding: 10px 15px;
+    font-size: 12px;
+    color: black;
+}
+/* .blogs-post-container .post-container {
+    display: inline-block; 
+    padding: 9px;
+    max-width: 30%;
+    margin-bottom: 50px;
+}
+.blogs-post-container .post-container p {
+    margin-bottom: 35px;
+}
+.blogs-post-container .post-container img {
+    width: 100%;
+    height: 218px;
+} */
+
+/* pie de pagina */
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: #23282d;
+    border-top: 35px solid #e6916a;
+}
+footer p {
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/*2da pagina o 2do blog---------------------------*/
+.blog2-main-container {
+    background: url(./Imágenes/bebe12.jpg);
+    padding: 1em 50px 40px;
+}
+.blog2-main-container h1 {
+    font-size: 35px;
+    padding: 0 50px 0px;
+}
+
+.blog2-main-container img {
+    width: 100%;
+    border-radius:5px;
+    
+}
+.blog2-img {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+.blog2-img1 {
+    grid-column: 1;
+    margin: 1em;
+}
+.blog2-img2 {
+    grid-column: 2;
+    margin: 1em;
+    width: 90%;
+}
+
+.blog2-baby-container {
+    padding: 0 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+.blog2-baby-container h3 {
+    border-bottom: 1px solid #23282d;
+    /* margin-bottom: 5px; */
+    padding-bottom: 25px;
+}
+
+.blog2-baby-container p {
+    text-align: justify;
+}
+
+.btn {
+    width: 25%;
+    align-self: end;
+    border: 1px;
+    border-radius: 5px;
+    height: 3em;
+    background-color: #eabf95;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:2em;
+}
+
+#card-function {
+    display: none;
+}
+.card {
+    display: flex;
+    width: 45%;
+    border-radius: 5%;
+    box-shadow: 0 2px 11px 4px rgb(0 0 0 / 15%);
+    flex-direction: column;
+    background: linear-gradient(to right, #ffffff80, #ffffff80), url(./Imágenes/bebe13-removebg-preview.png);
+    background-size: 4em;
+    background-repeat-x: repeat;
+    background-repeat-y: no-repeat;
+    background-position: center;
+}
+
+.content-card {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-card h4{
+    height: 5em;
+}
+
+.card img {
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+/*contacto-----------*/
+.contact-main-container {
+    padding: 0 3em ;
+}
+.contact-main-container div {
+    display: inline-block;
+    /* width: 49.5%; */
+    height: 100%;
+    /* justify-content: space-around; */
+}
+.contact-main-container div a{
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+.contact-main-container .contact-left,.contact-right {
+    text-align: initial;
+    margin-top: 80px;
+}
+.contact-main-container img {
+    width: 100px;
+}
+
+#enviar-function{
+    display: none;
+}
+
+.card-contact{
+    
+}
+
+/* formulario */
+.container-main-form {
+ max-width: 980px;
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ justify-items: center;
+ align-items: center;
+}
+
+main .container-form {
+    height: 100vh;
+    background: linear-gradient(to right, #bfe6ba61, #d3959b7d), url(./Imágenes/bebe9.jpg);
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+main .formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.formulario input {
+    width: 20em;
+    /* margin-bottom: 1em; */
+    border-radius: 4px;
+    border: 1px;
+    height: 2em;
+}
+
+.formulario textarea{
+    width: 20em;
+    margin-bottom: 1em;
+    padding-bottom: 2em;
+    border-radius: 4px;
+    border: 1px;
+}
+
+.formulario button{
+    width: 10em;
+    margin-bottom: 1em;
+    align-self: center;
+    height: 3em;
+    border-radius: 4px;
+    border: 1px;
+    background-color: #47cfac8c;
+}
+
+.form-img {
+    width: 100%;
+}
+
+.form-img img {
+    width: 90%;
+    border-radius: 5px;
+}
+
+
+
+
+/* carousel */
+
+.carousel {
+    width: 100%;
+    overflow-x: scroll;
+    /* padding: 0px 30px; */
+    position: relative;
+    background: linear-gradient(to right, #288ee92b, #4bb6c778);
+    height: 50vh;
+    display: flex;
+    z-index: 1;
+  }
+  
+  .carousel__container {
+    /* white-space: nowrap; */
+    margin: 2em 1em;
+    display: flex;
+    flex-wrap: nowrap;
+    /* padding-bottom: 10px; */
+    align-items: center;
+    align-content: center;
+  }
+  
+  .carousel-item {
+    background-color: antiquewhite;
+    width: 9em;
+    height: 10em;
+    border-radius: 25px;
+    margin-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-transition: 450ms all;
+    transition: 450ms all;
+    -webkit-transform-origin: center left;
+            transform-origin: center left;
+    position: relative;
+  }
+  
+  .carousel-item:hover ~ .carousel-item {
+    -webkit-transform: translate3d(100px, 0, 0);
+            transform: translate3d(100px, 0, 0);
+  }
+  
+  .carousel__container:hover .carousel-item {
+    opacity: 0.3;
+  }
+  
+  .carousel__container:hover .carousel-item:hover {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 1;
+  }
+  
+  .carousel-item__img {
+    /* width: 200px;
+    height: 250px; */
+    width: 9em;
+    height: 10em;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: inherit;
+    margin-right: 1em;
+  }
+  
+  .carousel-item__img:last-child {
+    -webkit-transform-origin: center right;
+            transform-origin: center right;
+  }
+
+
+.waves {
+    position: absolute;
+    bottom: -225px;
+}
