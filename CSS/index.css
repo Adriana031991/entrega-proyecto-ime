@@ -110,7 +110,7 @@ nav .profile-link a:hover {
 .main-container {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
-    height: 100%;
+    height: 100vh;
     background: #D3959B ; 
     background: -webkit-linear-gradient(to right, #BFE6BA, #D3959B), url("Imágenes/portada.jpg");  
     background: linear-gradient(to right, #bfe6ba61, #d3959b7d), url("Imágenes/portada.jpg"); 
@@ -119,16 +119,19 @@ nav .profile-link a:hover {
     /* background-position: center;
     justify-items: center;
     background-attachment: fixed; */
-    /* margin-top: 3em; */
+    
 }
+
+
 .main-container section {
-    display: grid;
+    display: flex;
     grid-column: 2;
-    justify-items: center;
-    margin-top: 10em;
+    margin-top: 6em;
+    align-content: center;
+    flex-direction: column;
 }
 .main-container-text {
-    /* font-family: 'roboto', monospace; */
+    
     font-family: 'Fredoka One', cursive;
     font-weight: 700;
     font-size: 50px;
@@ -139,13 +142,16 @@ nav .profile-link a:hover {
     text-shadow: 2px 2px 2px #d3959b, 
     4px 4px 4px #47cfac, 
     6px 7px 3px #ccd1d9;
+    
 }
 .main-container-button {
     width: 110px;
     height: 50px;
     background-color: #48cfad;
     display: grid;
-    align-items: center;
+    align-self: center;
+    text-align: center;
+    align-content: center;
 }
 .main-container-button a {
     color: black;
@@ -389,7 +395,7 @@ footer p {
     width: 20em;
     text-align: center;
     flex-direction: column;
-    
+
 }
 
 /* formulario */
