@@ -245,9 +245,23 @@ footer p {
 
 /*2da pagina o 2do blog---------------------------*/
 .blog2-main-container {
-    background: url(./Imágenes/bebe12.jpg);
     padding: 1em 50px 40px;
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(./Imágenes/bebe12.jpg);
+    
 }
+
+/* .blog2-main-container::after {
+    content: "";
+    background: url(./Imágenes/bebe12.jpg);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+    
+} */
 .blog2-main-container h1 {
     font-size: 35px;
     padding: 0 50px 0px;
@@ -313,7 +327,7 @@ footer p {
     border-radius: 5%;
     box-shadow: 0 2px 11px 4px rgb(0 0 0 / 15%);
     flex-direction: column;
-    background: linear-gradient(to right, #ffffff80, #ffffff80), url(./Imágenes/bebe13-removebg-preview.png);
+    background: linear-gradient(to right, #c7c5c580, #c7c5c580), url(./Imágenes/bebe13-removebg-preview.png);
     background-size: 4em;
     background-repeat-x: repeat;
     background-repeat-y: no-repeat;
@@ -365,6 +379,16 @@ footer p {
 }
 
 .card-contact{
+    display: flex;
+}
+.card-contact-content{
+    display: flex;
+    border-radius: 4px;
+    border: 1px;
+    background-color: #47cfac8c;
+    width: 20em;
+    text-align: center;
+    flex-direction: column;
     
 }
 
@@ -385,6 +409,19 @@ main .container-form {
     justify-content: center;
     align-items: center;
     align-content: center;
+ flex-direction: column;
+
+}
+main .container-form button {
+    align-self: flex-start;
+    position: relative;
+    left: 11em;
+    width: 10em;
+    height: 3em;
+    border-radius: 4px;
+    border: 1px;
+    background-color: #47cfac8c;
+
 }
 
 main .formulario {
